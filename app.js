@@ -414,29 +414,29 @@ var var1;
 // var table = +prompt("What table would you like to print?")
 // console.log(table)
 // if (table === 0) {
-    //     table = 5
-    //     for (let index = 1; index <= 10; index++) {
-        //         document.write(table + " x " + index + " = " + table * index + "<br />")
-        //     }
-        // } else {
-            //     for (let index = 1; index <= 10; index++) {
-                //         document.write(table + " x " + index + " = " + table * index + "<br />")
-                //     }
-                // }   ///DONE
-                
-                // Q.6
-                // a) Take three subjects name from user and store them in 3 
-                // different variables.
-                // b) Total marks for each subject is 100, store it in another 
-                // variable.
-                // c) Take obtained marks for first subject from user and 
-                // stored it in different variable
-                // d) Take obtained marks for remaining 2 subjects from user 
-                // and store them in variables.
-                // e) Now calculate total marks and percentage and show the 
-                // result in browser like this.(Hint: user table)
-                
-                // var sub1 = prompt("Enter First Subject:")
+//     table = 5
+//     for (let index = 1; index <= 10; index++) {
+//         document.write(table + " x " + index + " = " + table * index + "<br />")
+//     }
+// } else {
+//     for (let index = 1; index <= 10; index++) {
+//         document.write(table + " x " + index + " = " + table * index + "<br />")
+//     }
+// }   ///DONE
+
+// Q.6
+// a) Take three subjects name from user and store them in 3 
+// different variables.
+// b) Total marks for each subject is 100, store it in another 
+// variable.
+// c) Take obtained marks for first subject from user and 
+// stored it in different variable
+// d) Take obtained marks for remaining 2 subjects from user 
+// and store them in variables.
+// e) Now calculate total marks and percentage and show the 
+// result in browser like this.(Hint: user table)
+
+// var sub1 = prompt("Enter First Subject:")
 // var sub2 = prompt("Enter Second Subject:")
 // var sub3 = prompt("Enter Third Subject:")
 // var totalmarks = 100
@@ -461,4 +461,131 @@ var var1;
 
 // CHAPTER 6 - 9 DONE!!!
 
+// CHAPTER 9 -10 
+// Q.1 Write a program to take “city” name as input from user. If 
+// user enters “Karachi”, welcome the user like this: 
+// “Welcome to city of lights”
+// var city = prompt("Name your city")
+// if(city==="Karachi" || city==="karachi"){
+//     alert("Welcome to the city of Lights")
+// } else {
+//     alert("You're not welcome")
+// }
+//DONE
+
+// Q.2 Write a program to take “gender” as input from user. If the
+// user is male, give the message: Good Morning Sir. If the 
+// user is female, give the message: Good Morning Ma’am.
+// var gender = prompt("What is your gender")
+// if(gender==="male"){
+//     alert("Good Morning Sir")
+// } else if (gender==="female"){
+//     alert("Good Morning Ma'am")
+// } else {
+//     alert("Bad Morning Mate!")
+// }  //DONE
+
+// Q.3 Write a program to take input color of road traffic signal 
+// from the user & show the message according to this table
+// Signal color Message
+// Red Must Stop
+// Yellow Ready to move
+// Green Move now
+// var color = prompt("What is the color of the signal ?")
+// if(color==="red"){
+//     alert("Must Stop")
+// } else if(color==="yellow"){
+//     alert("Ready to move")
+// }else if(color==="yellow"){
+//     alert("Move Now")
+// } //DONE 
+
+// Q.4 Write a program to take input remaining fuel in car (in 
+// litres) from user. If the current fuel is less than 0.25litres, 
+// show the message “Please refill the fuel in your car”
+// var fuel = +prompt("How much liters fuel?")
+// if(fuel < 0.25){
+//     alert("Please refill the fuel")
+// } //DONE
+
+// Q.5 Run this script, & check whether alert message would be
+// displayed or not. Record the outputs.
+// a. 
+// var a = 4;
+// if (++a === 5){
+// alert("given condition for variable a is true");
+// } //works
+// b. 
+// var b = 82;
+// if (b++ === 83){
+// alert("given condition for variable b is true");
+// } //not working
+// c. 
+// var c = 12;
+// if (c++ === 13){
+// alert("condition 1 is true");
+// }
+// if (c === 13){
+// alert("condition 2 is true");
+// } //works
+// if (++c < 14){
+// alert("condition 3 is true");
+// }
+// if(c === 14){
+// alert("condition 4 is true");
+// } //works
+// d. 
+// var materialCost = 20000;
+// var laborCost = 2000;
+// var totalCost = materialCost + laborCost;
+// if (totalCost === laborCost + materialCost){
+// alert("The cost equals");
+// } //works
+// e. 
+// if (true){
+// alert("True");
+// } //works
+// if (false){
+// alert("False");
+// } //not working
+// f. 
+// if("car" < "cat"){
+//     alert("car is smaller than cat");
+//     } //works
+
+// Q.6 Write a program to take input the marks obtained in three
+// subjects & total marks. Compute & show the resulting
+// percentage on your page. Take percentage & compute 
+// grade as per following table:
+
+// var subject1Marks = +prompt("Enter Marks obtained in Subject 1:");
+// var subject2Marks = +prompt("Enter Marks obtained in Subject 2:");
+// var subject3Marks = +prompt("Enter Marks obtained in Subject 3:");
+// var totalMarks = 300;
+
+// var totalObtainedMarks = subject1Marks + subject2Marks + subject3Marks;
+// var percentage = (totalObtainedMarks / totalMarks) * 100;
+
+// var grade = "";
+// var remarks = "";
+
+// if (percentage >= 80) {
+//     grade = "A-one";
+//     remarks = "Excellent";
+// } else if (percentage >= 70 && percentage < 80) {
+//     grade = "A";
+//     remarks = "Good";
+// } else if (percentage >= 60 && percentage < 70) {
+//     grade = "B";
+//     remarks = "You need to improve";
+// } else {
+//     grade = "Fail";
+//     remarks = "Sorry";
+// }
+// document.write("<h1>Marksheet</h1>")
+// document.write("Total Marks: " + totalMarks); document.write("<br>")
+// document.write("Marks Obtained: " + totalObtainedMarks); document.write("<br>")
+// document.write("Percentage: " + percentage.toFixed(2) + "%"); document.write("<br>")
+// document.write("Grade: " + grade); document.write("<br>")
+// document.write("Remarks: " + remarks);  //DONE
 

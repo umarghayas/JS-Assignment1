@@ -376,3 +376,89 @@ var var1;
 // document.write("You will need " + calc + " " + snack + " to last you until the age " + maxAge)
 
 // CHAPTER 5 DONE
+
+
+// CHAPTER 6 - 9
+// Q.1 Write a program to take a number in a variable, do the
+// required arithmetic to display the following result in your
+// browser:
+// var a = 10;
+// document.write("Result <br/> The value of a is: " + a + "<br /> ......................................<br />")
+// document.write("The value of ++a is: " + ++a + "<br />Now the value of a is: " + a + "<br />")
+// document.write("The value of a++ is: " + a++ + "<br />Now the value of a is: " + a + "<br />")
+// document.write("The value of --a is: " + --a + "<br />Now the value of a is: " + a + "<br />")
+// document.write("The value of a-- is: " + a-- + "<br />Now the value of a is: " + a + "<br />") //DONE
+
+// Q.2 What will be the output in variables a, b & result after
+// execution of the following script:
+// var a = 2, b = 1;
+// document.write("a is " + a + "<br>b is " + b + "<br>")
+// var result = --a - --b + ++b + b--;
+// Explain the output at each stage:
+// --a; a value will become 1
+// --a - --b; 1 - 0 (value of b becomes 0)
+// --a - --b + ++b; 1 - 0 + 1 (value of b now becomes 1)
+// --a - --b + ++b + b--; 1 - 0 + 1 + 1 (value of b becomes 2 after the execution of this statement)
+// document.write("result is " + result) //DONE
+
+
+// Q.3 Write a program that takes input a name from user & greet the user
+// var username = prompt("Please input your name: ")
+// alert("Hello There " +username) //DONE
+
+// Q.5 Write a program to take input a number from user & 
+// display it’s multiplication table on your browser. If user 
+// does not enter a new number, multiplication table of 5 
+// should be displayed by default.
+
+// var table = +prompt("What table would you like to print?")
+// console.log(table)
+// if (table === 0) {
+    //     table = 5
+    //     for (let index = 1; index <= 10; index++) {
+        //         document.write(table + " x " + index + " = " + table * index + "<br />")
+        //     }
+        // } else {
+            //     for (let index = 1; index <= 10; index++) {
+                //         document.write(table + " x " + index + " = " + table * index + "<br />")
+                //     }
+                // }   ///DONE
+                
+                // Q.6
+                // a) Take three subjects name from user and store them in 3 
+                // different variables.
+                // b) Total marks for each subject is 100, store it in another 
+                // variable.
+                // c) Take obtained marks for first subject from user and 
+                // stored it in different variable
+                // d) Take obtained marks for remaining 2 subjects from user 
+                // and store them in variables.
+                // e) Now calculate total marks and percentage and show the 
+                // result in browser like this.(Hint: user table)
+                
+                // var sub1 = prompt("Enter First Subject:")
+// var sub2 = prompt("Enter Second Subject:")
+// var sub3 = prompt("Enter Third Subject:")
+// var totalmarks = 100
+// var sub1Marks = +prompt("Enter Marks of " + sub1)
+// var sub2Marks = +prompt("Enter Marks of " + sub2)
+// var sub3Marks = +prompt("Enter Marks of " + sub3)
+
+// var totalObtainedMarks = sub1Marks + sub2Marks + sub3Marks;
+// var sub1Percentage = (sub1Marks / totalmarks) * 100;
+// var sub2Percentage = (sub2Marks / totalmarks) * 100;
+// var sub3Percentage = (sub3Marks / totalmarks) * 100;
+// var totalPercentage = (totalObtainedMarks / (3 * totalmarks)) * 100;
+
+// document.write("<h1>Marksheet</h1>");
+// document.write("<table>");
+// document.write("<tr><th>Subject</th><th>Total Marks</th><th>Marks Obtained</th><th>Percentage</th></tr>");
+// document.write("<tr><td>" + sub1 + "</td><td>" + totalmarks + "</td><td>" + sub1Marks + "</td><td>" + sub1Percentage.toFixed(2) + "%</td></tr>");
+// document.write("<tr><td>" + sub2 + "</td><td>" + totalmarks + "</td><td>" + sub2Marks + "</td><td>" + sub2Percentage.toFixed(2) + "%</td></tr>");
+// document.write("<tr><td>" + sub3 + "</td><td>" + totalmarks + "</td><td>" + sub3Marks + "</td><td>" + sub3Percentage.toFixed(2) + "%</td></tr>");
+// document.write("<tr><td>Total</td><td>" + (totalmarks * 3) + "</td><td>" + totalObtainedMarks + "</td><td>" + totalPercentage.toFixed(2) + "%</td></tr>");
+// document.write("</table>"); //DONE
+
+// CHAPTER 6 - 9 DONE!!!
+
+

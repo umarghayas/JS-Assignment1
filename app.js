@@ -677,3 +677,137 @@ var var1;
 // CHAPTER 9 - 11 DONE
 
 // CHAPTER 12 - 13
+// Q. 1. Write a program that takes a character (number or string) 
+// in a variable & checks whether the given input is a 
+// number, uppercase letter or lower case letter. (Hint: ASCII 
+// codes:- A=65, Z=90, a=97, z=122).
+
+// var input = prompt("Enter a character (number or string):");
+
+// if (input.length === 1) {
+//     var charCode = input.charCodeAt(0);
+
+//     if (charCode >= 48 && charCode <= 57) {
+//         document.write("The input is a number.");
+//     } else if (charCode >= 65 && charCode <= 90) {
+//         document.write("The input is an uppercase letter.");
+//     } else if (charCode >= 97 && charCode <= 122) {
+//         document.write("The input is a lowercase letter.");
+//     } else {
+//         document.write("The input is not a number, uppercase letter, or lowercase letter.");
+//     }
+// } else {
+//     document.write("Please enter a single character.");
+// }   //DONE
+
+//Q.2 Write a JavaScript program that accept two integers and
+// display the larger. Also show if the two integers are equal.
+
+// var num1 = +prompt("Enter Number 1")
+// var num2 = +prompt("Enter Number 2")
+
+// if(num1>num2){
+//     document.write("Larger Number is : " +num1)
+// } else if(num2>num1){
+//     document.write("Larger Number is : " +num2)
+// } else if(num1 ==  num2){
+//     document.write("Both numbers are equal")
+// } else {
+//     document.write("Please input numbers only")
+// }  //DONE
+
+// Q.3 Write a program that takes input a number from user & 
+// state whether the number is positive, negative or zero.
+// var number = +prompt("Enter a number:");
+
+// if (isNaN(number)) {
+//     document.write("Invalid input. Please enter a valid number.");
+// } else {
+//     if (number > 0) {
+//         document.write("The number is positive.");
+//     } else if (number < 0) {
+//         document.write("The number is negative.");
+//     } else {
+//         document.write("The number is zero.");
+//     }
+// } // DONE
+
+// Q.4 Write a program that takes a character (i.e. string of 
+// length 1) and returns true if it is a vowel, false otherwise
+
+// var input = prompt("Enter a character");
+
+// if (input.length === 1) {
+//     var charCode = input.charCodeAt(0);
+//     if (input === "a" || input === "e" || input === "i" || input === "o" || input === "u"){
+//         document.write("True")
+//     } else {
+//         document.write("False")
+//     }
+// } else {
+//     document.write("Please enter a single character")
+// } /// DONE
+
+
+// Q.5 Write a program that
+// a. Store correct password in a JS variable.
+// b. Asks user to enter his/her password
+// c. Validate the two passwords:
+// i. Check if user has entered password. If not, then 
+// give message “ Please enter your password”
+// ii. Check if both passwords are same. If they are 
+// same, show message “Correct! The password you 
+// entered matches the original password”. Show 
+// “Incorrect password” otherwise
+
+// var pwd = "aeiou123"
+// var inpPwd = prompt("Please enter your password")
+// if (inpPwd.length > 0) {
+//     if (inpPwd === pwd) {
+//         document.write("Correct! The password you entered matches the original password")
+//     }
+//     else {
+//         document.write("Incorrect Password")
+//     }
+// } else {
+//     document.write("Please enter a password")
+// }    //DONE
+
+// Q.6 This if/else statement does not work. Try to fix it:
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+//     greeting = "Good day";
+// }else {
+//     greeting = "Good evening";
+// }
+// document.write(greeting)   //DONE
+
+// Q.7 Write a program that takes time as input from user in 24 
+// hours clock format like: 1900 = 7pm. Implement the 
+// following case using if, else & else if statements
+
+// var time = prompt("Enter the time")
+
+// if (time.length == 4) {
+//     if (time >= 0 && time < 2400){
+//         // document.write("Time is valid")
+//         if(time >= 0 && time < 1200){
+//             document.write("Good Morning!")
+//         } else if(time >= 1200 && time < 1700){
+//             document.write("Good Afternoon!")
+//         } else if(time >= 1700 && time < 2100){
+//             document.write("Good evening!")
+//         } else if(time >= 2100 && time <= 2359){
+//             document.write("Good Night!")
+//         }
+//     } else{
+//         document.write("Please enter Time within 0000 to 2359")
+//     }
+// }
+// else {
+//     document.write("Please input time as XXXX hours")
+// }  //DONE 
+
+
+// Chapter 11 - 13 DONE
